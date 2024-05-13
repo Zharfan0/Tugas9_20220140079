@@ -1,0 +1,14 @@
+
+
+.potoprofil{
+    width: 250px;
+}
+
+body{
+    border: #ECB365 5px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}

@@ -1,0 +1,104 @@
+body{
+    background-color: #041C32;
+    font-family: Biotif;
+    margin-top: 30px;
+}
+
+h1{
+    color: #ECB365;
+    display: flex;
+    justify-content: center;
+}
+
+.TombolAtas{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tombol:hover {
+    background-color: #ECB365;
+    color: black;
+}
+
+.TombolBawah{
+    display: flex;
+    justify-content: center;
+}
+
+.marginkanan{
+    margin-right: 15px;
+}
+
+.marginkiri{
+    margin-left: 15px;
+}
+
+.tombol{
+    aspect-ratio: 1 / 1;
+    height: 170px;
+    background-color: #041C32;
+    background-position-x: center;
+    background-position-y: center; 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer;
+    border: #ECB365 solid 2px;
+    margin: 3px 100px;
+    padding: 0; 
+    border-radius: 5px;
+    transition: 0.4s;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.tombol:hover {
+    background-color: #ECB365; 
+    color: black; 
+    transform: scale(1.05); 
+    border: solid 2px #a17435; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.tombol img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s; 
+}
+
+
+.tombol img {
+    max-width: 100%; /* Menyesuaikan lebar gambar */
+    max-height: 100%; /* Menyesuaikan tinggi gambar */
+    object-fit: cover; /* Menyesuaikan agar gambar menutupi area tanpa kehilangan aspek rasionya */
+}
+
+.home{
+    background-color: transparent;
+    border: #ECB365 1px solid;
+    color: #ECB365;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 45px;
+    transition: 0.4s;
+}
+
+.home:hover {
+    background-color: #ECB365;
+    color: black;
+}
+
+.desain {
+    color: #ECB365;
+    font-family: Biotif;
+    font-size: 24px;
+    font-weight: bold;
+}

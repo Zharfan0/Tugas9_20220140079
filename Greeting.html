@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang!</h1>
+        <p id="greeting">Loading...</p>
+        <p id="time">Loading...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<script>
+    function updateTime() {
+    const now = new Date();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+
+    const timeString = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}:${second.toString().padStart(2, '0')}`;
+    document.getElementById('time').textContent = `Sekarang jam ${timeString}`;
+
+    let greeting;
+    if (hour >= 1 && hour < 9) {
+        greeting = 'Selamat Pagi!';
+    } else if (hour >= 9 && hour < 17) {
+        greeting = 'Selamat Siang!';
+    } else {
+        greeting = 'Selamat Malam!';
+    }
+    document.getElementById('greeting').textContent = greeting;
+}
+
+updateTime(); // Update time immediately
+setInterval(updateTime, 1000); // Update time every second
+</script>
+
+</html>

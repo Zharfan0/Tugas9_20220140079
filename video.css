@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://wallpapercave.com/wp/wp2800782.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid #190773;
+            background-color: aliceblue;
+            color: blue;
+            box-shadow: #660505;
+            border-radius: 1px 1px 2px #054d12;
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+}
