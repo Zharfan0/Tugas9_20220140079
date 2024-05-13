@@ -71,6 +71,26 @@ function munculHobi3(){
     alert("SAYA SUKA MAKAN ENAK");
 }
 
+function hitungUmur() {
+    var tanggalLahir = document.getElementById("tanggal_lahir").value;
+    var tanggalLahirObj = new Date(tanggalLahir);
+    var sekarang = new Date();
+    var tahunLahir = tanggalLahirObj.getFullYear();
+    var bulanLahir = tanggalLahirObj.getMonth() + 1;
+    var tanggalLahir = tanggalLahirObj.getDate();
+    var tahunSekarang = sekarang.getFullYear();
+    var bulanSekarang = sekarang.getMonth() + 1;
+    var tanggalSekarang = sekarang.getDate();
+
+    var umur = tahunSekarang - tahunLahir;
+
+    if (bulanSekarang < bulanLahir || (bulanSekarang == bulanLahir && tanggalSekarang < tanggalLahir)) {
+        umur--;
+    }
+
+    document.getElementById("umur").value = umur;
+}
+
 updateGreetings();
 setInterval(updateGreetings, 1000);
 
