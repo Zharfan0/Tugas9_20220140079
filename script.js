@@ -59,6 +59,18 @@ function updateGreetings() {
     currentTimeElement.innerText = 'Waktu Sekarang: ' + today.toLocaleTimeString();
 }
 
+function munculHobi1(){
+    alert("SAIA SUKA MEMANCING (EMOSI)");
+}
+
+function munculHobi2(){
+    alert("SAIA SUKA BERCOCOK TANAM EH");
+}
+
+function munculHobi3(){
+    alert("SAYA SUKA MAKAN ENAK");
+}
+
 updateGreetings();
 setInterval(updateGreetings, 1000);
 
